@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --blacky: rgba(30, 30, 30, 1);
+  --highlight: rgba(245, 115, 115, 1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,15 +15,41 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --black: rgba(30, 30, 30, 1);
+    --highlight: rgba(245, 115, 115, 1);
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--black);
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+@layer components {
+  .navbar {
+    width: 95vw;
+    height: 6vh;
+    display: flex;
+    align-self: center;
+    border-radius: 3.125rem;
+    background: var(--black, #1e1e1e);
+    margin-top: 16px;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+  }
+
+  .navbar a {
+    color: var(--white, #fff);
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }
