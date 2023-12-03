@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 214, 219, 220;
@@ -28,10 +30,20 @@ body {
   display: flex;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Inter", sans-serif;
+}
+
 @layer components {
   .navbar {
     width: 95vw;
-    height: 6vh;
+    height: 10vh;
     display: flex;
     align-self: center;
     border-radius: 3.125rem;
@@ -51,5 +63,11 @@ body {
     line-height: normal;
     text-transform: uppercase;
     text-decoration: none;
+  }
+
+  .highlighted {
+    background: var(--red, #f57373);
+    color: #fff !important;
+    padding: 4px 10px;
   }
 }
