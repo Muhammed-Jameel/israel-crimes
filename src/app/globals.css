@@ -43,7 +43,7 @@ p {
 @layer components {
   .navbar {
     width: 95vw;
-    height: 10vh;
+    height: 6vh;
     display: flex;
     align-self: center;
     border-radius: 3.125rem;

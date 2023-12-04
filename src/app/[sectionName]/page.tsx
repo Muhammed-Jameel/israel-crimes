@@ -82,7 +82,10 @@ function Section({ params }: { params: { sectionName: string } }) {
     <div className="flex flex-col w-full h-full">
       <Navbar />
       {/* this is the section {decodeURIComponent(params.sectionName)} */}
-      <ListComponent items={itemss} />
+      <ListComponent
+        items={itemss}
+        route={decodeURIComponent(params.sectionName)}
+      />
     </div>
   );
 }

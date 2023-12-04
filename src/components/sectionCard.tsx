@@ -12,7 +12,9 @@ const SectionCard: React.FC<{ section: Section }> = ({ section }) => {
     <div
       className={`section-card bg-[https://images.unsplash.com/photo-1505533321630-975218a5f66f?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D]`}
     >
-      <Link href={`/${section.name}`}>{section.name} {section.deathCount}</Link>
+      <Link href={`/${section.name}`}>
+        {section.name} {section.deathCount}
+      </Link>
     </div>
   );
 };
