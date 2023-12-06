@@ -41,9 +41,10 @@ p {
 }
 
 @layer components {
+
   .navbar {
     width: 95vw;
-    height: 6vh;
+    height: 6vh !important;
     display: flex;
     align-self: center;
     border-radius: 3.125rem;
@@ -55,7 +56,7 @@ p {
   }
 
   .navbar a {
-    color: var(--white, #fff);
+
     font-family: Inter;
     font-size: 1.5rem;
     font-style: normal;
