@@ -1,4 +1,5 @@
 import ListComponent from "@/components/CardsList";
+import Navbar from "@/components/navbar";
 
 import React from "react";
 
@@ -47,6 +48,7 @@ const Child = ({
   ];
   return (
     <div>
+      <Navbar/>
       this is the page of the child {decodeURIComponent(params.sectionChild)}
       <p>THis is {params.sectionName}</p>
       <ListComponent

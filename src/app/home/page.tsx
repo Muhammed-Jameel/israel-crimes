@@ -5,9 +5,9 @@ import React from "react";
 const HomePage = () => {
   return (
     <>
-    <Navbar />
+   
       <div className="w-full h-full flex flex-col">
-        
+       <Navbar/> 
 
         <div className="flex w-full m-8 justify-around h-full">
           <div
