@@ -16,7 +16,7 @@ const Navbar = () => {
   const pathname = usePathname();
   return (
     <>
-      <div className="flex navbar self-center">
+      <nav className="flex w-95 navbar self-center rounded-full mt-4 justify-around items-center">
         {pages.map((page, index) => (
           <Link
             key={index}
@@ -30,7 +30,7 @@ const Navbar = () => {
             {page}
           </Link>
         ))}
-      </div>
+      </nav>
     </>
   );
 };

@@ -41,24 +41,15 @@ p {
 }
 
 @layer components {
-
   .navbar {
     width: 95vw;
     height: 6vh !important;
-    display: flex;
-    align-self: center;
-    border-radius: 3.125rem;
     background: var(--black, #1e1e1e);
-    margin-top: 16px;
-    justify-content: space-around;
-    align-items: center;
-    align-self: center;
   }
 
   .navbar a {
-
     font-family: Inter;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
