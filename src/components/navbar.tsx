@@ -22,8 +22,8 @@ const Navbar = () => {
             key={index}
             className={` ${
               pathname === `/${page}`
-                ? " bg-white rounded-3xl text-black-500 py-2 px-5"
-                : "text-white"
+                ? " bg-white rounded-3xl text-black-500 py-2 px-5 font-[inter]"
+                : "text-white font-[inter]"
             }`}
             href={`/${page}`}
           >
