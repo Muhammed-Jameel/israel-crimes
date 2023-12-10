@@ -39,7 +39,7 @@ const Navbar = () => {
                 key={index}
                 className={` ${
                   pathname.includes(page)
-                    ? " bg-white rounded-3xl text-[#1e1e1e] py-2 px-5"
+                    ? " bg-white rounded-3xl text-[#1e1e1e] py-2 px-5 font-[inter] "
                     : "text-white font-[inter]"
                 }`}
                 href={`/${page}`}
