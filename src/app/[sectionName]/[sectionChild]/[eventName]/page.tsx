@@ -58,7 +58,10 @@ const eventPage = ({
           Death count: {eventData.count}
         </h4>
         {eventData.sections.map((section, index) => (
-          <div key={index} className="flex w-full h-full justify-between pt-12">
+          <div
+            key={index}
+            className="flex flex-col lg:flex-row w-full h-full justify-between pt-12"
+          >
             <div className="w-full h-full flex flex-col justify-between">
               {section.content}
               <Link target=" " href={section.urlSource}>
