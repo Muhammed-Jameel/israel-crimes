@@ -39,7 +39,7 @@ h6,
 p,
 div,
 a {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter";
 }
 
 @layer components {
