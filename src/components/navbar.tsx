@@ -60,7 +60,7 @@ const Navbar = () => {
             }`}
             href={`/${page}`}
           >
-            {page}
+            {page.replaceAll("-", " ")}
           </Link>
         ))}
       </nav>
