@@ -25,7 +25,7 @@ const Navbar = () => {
         {/* <img src={MenuIcon} alt="menuIcon" /> */}
         <div className="text-white md:hidden w-full bg-[#1e1e1e] h-full px-8">
           <button onClick={() => setShowNav(!showNav)}>
-            <Image src={MenuIcon} alt="Menu Icon" width={40} height={40} />
+            <Image src={MenuIcon} alt="Menu Icon" width={28} height={28} />
           </button>
           <div
             className={`${
